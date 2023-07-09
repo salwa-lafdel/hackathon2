@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js" async defer></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+     <!-- navbar -->
+     <div class="conatainer-fluid " >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+      <div class="container-fluid  " style="background-color: green;">
+        <a class="navbar-brand "style="color: orangered;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 25px;"  href="index.html">Your vols</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white"  href="vols.html"><i class="fa fa-plane" aria-hidden="true"></i> vols</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-white" href="hotel.html"> Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="volhotel.html"><i class="fa fa-home" aria-hidden="true"></i>  vol+Hotel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="#Offers"><i class="fa fa-gift" aria-hidden="true"></i> Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="contact.html" ><i class="fa fa-user-circle-o" aria-hidden="true"></i> contact</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-white " id="deplacesign" href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i> SignUp</a>
+              </li>
+              <div class="deplacelogo">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x ga-right"></span></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+                <a href="https://www.youtube.com" target="_blank" title="Youtube"><span class="fa fa-youtube-square fa-2x ga-right"></span></a>
+               </div>
+ 
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+
+    <header class="header">
+      <div class="overlay"> 
+          <div class="container">
+              <div class="description text-center m-5"></div>
+              <h2 id="demo" style="color: crimson; font-family: Georgia, 'Times New Roman', Times, serif;" ></h2>
+              <script>
+                const myTimeout = setTimeout(myGreeting, 5000);
+                
+                function myGreeting() {
+                  document.getElementById("demo").innerHTML = "Dépechez-vous les prix vont augumenter!"
+                }
+                
+  
+ 
+                </script>
+              <h1 style="color: white;">les Vols et Les Hotels</h1>
+              <h3>Réservez votre billet d'avion pas cher et votre place sur les meilleurs Hotels</h3>
+              <!-- tabs -->
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  
+                </li>
+              </ul>
+              <h3 style="color: orangered;">Réservez votre Vol + Hôtel pour économiser jusqu’à 40 %</h3>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Départ</span>
+                <input type="text" class="form-control" placeholder="ville" aria-label="Username" aria-describedby="addon-wrapping" required>
+              </div><br>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Arrivé</span>
+                <input type="text" class="form-control" placeholder="ville" aria-label="Username" aria-describedby="addon-wrapping" required>
+              </div>
+              <br>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Hotel</span>
+                <input type="text" class="form-control" placeholder="Nom de Hotel" aria-label="Username" aria-describedby="addon-wrapping" required>
+              </div>
+              <br>
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping">Nombre</span>
+              <input type="number" class="form-control" placeholder="ex : 1:nombre de chambre , 2:nombre d'enfants" aria-label="Username" aria-describedby="addon-wrapping" required>
+            </div><br>
+            <td><button class="btn btn-success">Sélectionner</button></td>
+                  
+          </div>
+      </div>
+      </div>
+  </header>
+  <section class="Offers" id="Offers"></section>
+  <div class="plaecontact">
+    <h3 style="color: orangered;">Contacter nous aussi sur</h3>
+    <div class="deplacelogo2">
+      <a href="https://www.facebook.com" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x ga-right"></span></a>
+      <a href="https://www.instagram.com" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+      <a href="https://www.youtube.com" target="_blank" title="Youtube"><span class="fa fa-youtube-square fa-2x ga-right"></span></a>
+     </div>
+  
+  </div><br><br>
+     <!-- Section Gallary Start -->
+     <section class="gallary" id="gallary">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>G</span>allary</h1>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/sindapore.avif" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/paris.jpeg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/london.jpeg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img   src="images/dubai2.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/newyork.jpeg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/hotelPARIS.jpeg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

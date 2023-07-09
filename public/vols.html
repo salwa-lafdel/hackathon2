@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js" async defer></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+     <!-- navbar -->
+     <div class="conatainer-fluid " >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+      <div class="container-fluid  " style="background-color:green;">
+        <a class="navbar-brand " href="index.html" style="color: orangered;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 25px;" >Your vols</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white"  href="vols.html"><i class="fa fa-plane" aria-hidden="true"></i> vols</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-white" href="hotel.html">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="volhotel.html">  <i class="fa fa-home" aria-hidden="true"></i> vol+Hotel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="index.html"><i class="fa fa-gift" aria-hidden="true"></i> Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="contact.html" > <i class="fa fa-user-circle-o" aria-hidden="true"></i> contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" id="deplacesign" href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i> SignUp</a>
+              </li>
+              <div class="deplacelogo">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x ga-right"></span></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+                <a href="https://www.youtube.com" target="_blank" title="Youtube"><span class="fa fa-youtube-square fa-2x ga-right"></span></a>
+               </div>
+ 
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+      
+
+
+
+
+
+    
+    <header class="header">
+      <div class="overlay"> 
+          <div class="container">
+              <div class="description text-center m-5"></div>
+              <h2 id="demo" style="color: crimson; font-family: Georgia, 'Times New Roman', Times, serif;" ></h2>
+              <script>
+                const myTimeout = setTimeout(myGreeting, 5000);
+                
+                function myGreeting() {
+                  document.getElementById("demo").innerHTML = "Dépechez-vous les prix vont augumenter!"
+                }
+                const myTimeout2 = setTimeout(myGreeting1, 10000);
+  
+                function myGreeting1() {
+                  alert("Nous ne pouvons maintenir les prix que pour une durée limitée .Réservez avant qu'il ne soit trop tard !")
+                }
+              </script>
+             
+              <h1 style="color: white;">les Vols</h1>
+              <h3>Réservez votre billet d'avion pas cher</h3>
+              <!-- tabs -->
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Vol</a>
+                </li>
+              </ul>
+              <form action="" id="form">
+                <div class="radio" style="color: black; font-size: 25px;">
+                  <input type="radio" id="rad" name="rad" required >allez-retour
+                  <input type="radio" id="rad" name="rad" required>aller simple
+                  <input type="radio" id="rad" name="rad" required>multi-destinations
+                  <input type="radio" id="rad" name="rad" required>vol direct uniquement 
+                </div><br>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" >économique</span>
+                  <input type="text" class="form-control"id="économique" placeholder="économique ou éco Premium ou Affaire" aria-label="Username" aria-describedby="addon-wrapping" required>
+                </div><br>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">Départ</span>
+                  <input type="text" class="form-control" id="départ" placeholder="ville" aria-label="Username" aria-describedby="addon-wrapping" required>
+                </div><br>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">Arrivé</span>
+                  <input type="text" class="form-control" id="arrivé" placeholder="ville" aria-label="Username" aria-describedby="addon-wrapping" required>
+                </div><br>
+                <button class="btn btn-success" onclick="sendDataVols()" type="submit" >Sélectionner</button>
+                    
+              </form>
+              
+          </div>
+      </div>
+      </div>
+  </header>
+  <!-- tabvol -->
+  <br><br><br>
+<section class="Offers" id="Offers"></section>
+<div class="alert alert-primary"  style="color: orangered; font-size: 20px;"role="alert">
+  Voyagez à moindre cout et accedez à des Hotels à moitié prix                  <a href="volhotel.html" class="alert-link"> Découvrire </a>
+</div><br><br>
+<div class="plaecontact">
+  <h3 style="color: orangered;">Contacter nous aussi sur</h3>
+  <div class="deplacelogo2">
+    <a href="https://www.facebook.com" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x ga-right"></span></a>
+    <a href="https://www.instagram.com" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+    <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+    <a href="https://www.youtube.com" target="_blank" title="Youtube"><span class="fa fa-youtube-square fa-2x ga-right"></span></a>
+   </div>
+
+</div><br><br>
+<section class="Offers" id="Offers"></section>
+<div class="PRIME">
+    <h1 style="color: cadetblue;">Your Vols</h1>
+    <h2 style="color: rgb(4, 58, 59);">Meilleurs Offers</h2>
+    <h3 style="color: orangered">Économisez et visitez ces destinations de rêve!</h3>
+</div><br>
+  <table class="table caption-top">
+    <thead>
+      <tr style="background-color: orangered; color: white;">
+        <th scope="col">Your vols</th>
+        <th scope="col">Ryanair</th>
+        <th scope="col">Air France</th>
+        <th scope="col">Air Maroc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <th scope="row" style="background-color: cadetblue;">ALLER</th>
+        <td>12:55</td>
+        <td>16:15</td>
+        <td>01:10</td>
+      </tr>
+      <tr>
+        <th scope="row" style="background-color: cadetblue;">DE</th>
+        <td>Marseille</td>
+        <td>Rome</td>
+        <td>CasaBlanca</td>
+      </tr>
+      <tr>
+        <th scope="row" style="background-color: cadetblue;">RETOUR</th>
+        <td>14:35</td>
+        <td>08:30</td>
+        <td>03:25</td>
+      </tr>
+      <tr>
+        <th scope="row" style="background-color: cadetblue;">à</th>
+        <td>Paris</td>
+        <td>Paris</td>
+        <td>Dakhla</td>
+      </tr>
+      <tr>
+        <th scope="row" style="background-color: cadetblue;">Durée</th>
+        <td>1 h 40 min</td>
+        <td>2 h 15 min</td>
+        <td>2 h 15 min</td>
+      </tr>
+      <tr>
+        <th scope="row" style="background-color: cadetblue;">Tarif non Réduit</th>
+        <td> 89 $</td>
+        <td>63 $</td>
+        <td>41 $</td>
+      </tr>
+      <tr>
+        <th scope="row" style="background-color: cadetblue;">la selection</th>
+        <td><button class="btn btn-success">Sélectionner</button></td>
+        <td><button class="btn btn-success">Sélectionner</button></td>
+        <td><button class="btn btn-success">Sélectionner</button></td>
+      </tr>
+    </tbody>
+  </table>
+   <!-- Dishes Section Start -->
+   <section class="dishes" id="dishes">
+    <div class="main-text">
+        <h3><span>C</span>ountries</h3>
+    </div>
+    <div class="card-content">
+        <div class="row">
+            
+            <div class="card-body">
+                <h3>Dubai</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="price">Price <strong>$120</strong></div>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="card-body">
+                <h3>London</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="price">Price <strong>$90</strong></div>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="row">
+      
+            <div class="card-body">
+                <h3>NewYork</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="price">Price <strong>$50</strong></div>
+                <button>Order Now</button>
+            </div>
+        </div>
+       
+        
+        <div class="row">
+            <div class="card-body">
+                <h3>Italy</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="price">Price <strong>$30</strong></div>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <h3>Singapore</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="price">Price <strong>$60</strong></div>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="card-body">
+                <h3>Paris</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="price">Price <strong>$150</strong></div>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

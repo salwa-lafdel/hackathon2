@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <script src="script.js"></script>
+</head>
+<body>
+     <!-- navbar -->
+     <div class="conatainer-fluid " >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+      <div class="container-fluid  " style="background-color: green;">
+        <a class="navbar-brand " style="color: orangered;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 25px;"  href="index.html">Your vols</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white "  href="vols.html"><i class="fa fa-plane" aria-hidden="true"></i> vols</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-white" href="hotel.html">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="volhotel.html"><i class="fa fa-home" aria-hidden="true"></i>  vol+Hotel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-white" href="#Offers"><i class="fa fa-gift" aria-hidden="true"></i> Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="contact.html" ><i class="fa fa-user-circle-o" aria-hidden="true"></i> contact</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-white " id="deplacesign" href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i> SignUp</a>
+              </li>
+              <div class="deplacelogo">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x ga-right"></span></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+                <a href="https://www.youtube.com" target="_blank" title="Youtube"><span class="fa fa-youtube-square fa-2x ga-right"></span></a>
+               </div>
+ 
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <header class="header">
+      <div class="overlay"> 
+          <div class="container">
+              <div class="description text-center m-5"></div>
+              <h2 id="demo" style="color: crimson; font-family: Georgia, 'Times New Roman', Times, serif;" ></h2>
+              <script>
+                const myTimeout = setTimeout(myGreeting, 5000);
+                
+                function myGreeting() {
+                  document.getElementById("demo").innerHTML = "Dépechez-vous les prix vont augumenter!"
+                }
+                
+  
+ 
+                </script>
+              <h3>s'inscrire pour économiser jusqu'à 100 € sur l'hébergement.</h3>
+              <!-- tabs -->
+           <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">SignUp</a>
+            </li>
+          </ul>
+          <h6 style="color: white;">Créez votre compte</h6>
+          <div class="deplacelogosignup">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x ga-right"></span></a>
+            <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+          </div> 
+          
+         <h5 style="color: white;">ou bien</h5>
+
+          <form action="" id="form">  <div class="input-group flex-nowrap">
+            <span class="input-group-text" >NOM</span>
+            <input type="text" class="form-control"id="nom" placeholder="nom" aria-label="pays,ville,quartier" aria-describedby="addon-wrapping" required>
+          </div><br>
+
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text">Prénom</span>
+              <input type="text" class="form-control" id="prenom" placeholder="Prénom" aria-label="Username" aria-describedby="addon-wrapping" required>
+            </div><br>
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text" >télé</span>
+              <input type="tel" class="form-control" id="tele" placeholder=" numéro detéléphone" aria-label="Username" aria-describedby="addon-wrapping" required>
+            </div><br>
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text" >Email</span>
+              <input type="email" class="form-control"id="email" placeholder="username@gmail.com" aria-label="Username" aria-describedby="addon-wrapping" required>
+            </div>
+            <br>
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text" >Password</span>
+              <input type="password" class="form-control"  id="password" placeholder="password" aria-label="Username" aria-describedby="addon-wrapping" required>
+            </div>
+            <br>
+            
+            <button  class="btn btn-primary" type="submit" onClick="sendData()">Créez</button>
+            <div id="root"></div>
+                  </form>
+         
+          </div>
+      </div>
+      </div>
+  </header><br><br>
+  <div class="plaecontact">
+    <h3 style="color: orangered;">Contacter nous aussi sur</h3>
+    <div class="deplacelogo2">
+      <a href="https://www.facebook.com" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x ga-right"></span></a>
+      <a href="https://www.instagram.com" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+      <a href="https://www.youtube.com" target="_blank" title="Youtube"><span class="fa fa-youtube-square fa-2x ga-right"></span></a>
+     </div>
+  
+  </div><br><br>
+   
+
+  
+</body>
+</html>

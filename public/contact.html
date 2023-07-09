@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js" async defer></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+     <!-- navbar -->
+     <div class="conatainer-fluid " >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+      <div class="container-fluid  " style="background-color: green;">
+        <a class="navbar-brand " style="color: orangered;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 25px;" href="index.html">Your vols</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white "  href="vols.html"><i class="fa fa-plane" aria-hidden="true"></i> vols</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="hotel.html">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="volhotel.html"><i class="fa fa-home" aria-hidden="true"></i>  vol+Hotel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#Offers"><i class="fa fa-gift" aria-hidden="true"></i> Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="contact.html" ><i class="fa fa-user-circle-o" aria-hidden="true"></i> contact</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-white" id="deplacesign" href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i> SignUp</a>
+              </li>
+              <div class="deplacelogo">
+               <a href="https://www.facebook.com" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x ga-right"></span></a>
+               <a href="https://www.instagram.com" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+               <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+               <a href="https://www.youtube.com" target="_blank" title="Youtube"><span class="fa fa-youtube-square fa-2x ga-right"></span></a>
+              </div>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+
+    <header class="header">
+      
+      <div class="overlay"> 
+          <div class="container">
+              <div class="description text-center m-5"></div>
+          
+              <h2 id="demo" style="color: crimson; font-family: Georgia, 'Times New Roman', Times, serif;" ></h2>
+              <script>
+                const myTimeout = setTimeout(myGreeting, 5000);
+                
+                function myGreeting() {
+                  document.getElementById("demo").innerHTML = "Dépechez-vous les prix vont augumenter!"
+                }
+                
+  
+ 
+                </script>
+              
+              <h3>Connectez-vous pour partagez votre expérience ou des probléme que tu recoit</h3>
+              <!-- tabs -->
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  
+                </li>
+              </ul>
+              <h4 style="color: orangered;">ne partageons rien sans votre premission</h4>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Username</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <br>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">téléphone</span>
+                <input type="tel" class="form-control" placeholder=" ex:0012457803" aria-label="Username" aria-describedby="addon-wrapping">
+              </div><br>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Email</span>
+                <input type="email" class="form-control" placeholder="user@gmail.com" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <br>  
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping">votre avis</span>
+               <textarea name="" id="" cols="30" rows="1" class="form-control" placeholder="text............" aria-label="Username" aria-describedby="addon-wrapping"></textarea> 
+            </div><br>
+            <td><button class="btn btn-success">Sélectionner</button></td>
+                  
+          </div>
+      </div>
+      </div>
+  </header><br><br>
+  <section class="Offers" id="Offers"></section>
+  
+<div class="alert alert-primary"  style="color: orangered; font-size: 20px;"role="alert">
+  Voyagez à moindre cout et accedez à des Hotels à moitié prix                  <a href="volhotel.html" class="alert-link"> Découvrire </a>
+</div><br><br><br>  
+
+
+
+  <div class="plaecontact">
+    <h3 style="color: orangered;">Contacter nous aussi sur</h3>
+    <div class="deplacelogo2">
+      <a href="https://www.facebook.com" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x ga-right"></span></a>
+      <a href="https://www.instagram.com" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+      <a href="https://www.youtube.com" target="_blank" title="Youtube"><span class="fa fa-youtube-square fa-2x ga-right"></span></a>
+     </div>
+
+  </div><br><br>
+     <!-- about -->
+  <div class="container" id="about">
+    <h1>ABOUT</h1>
+    <div class="row">
+     <div class="col-md-6 py-3 py-md-0">
+      <div class="card">
+        <img src="img.jpg" alt="">
+      </div>
+     </div>
+     <div class="col-md-6 py-3 py-md-0">
+      <h2>YourVols </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus exercitationem ut. Non assumenda nihil tempore minima consequatur corrupti numquam quia dolorum laborum praesentium vero commodi ex velit expedita, omnis adipisci? Exercitationem consequatur ducimus praesentium dolores rerum voluptatibus, nam illo quas modi deleniti iusto laboriosam adipisci enim excepturi, cupiditate quidem neque tempora sunt animi natus aliquid. Fugiat eligendi molestiae magnam vero dicta est praesentium unde ducimus eveniet commodi alias, pariatur quis quod saepe sed accusamus porro nemo doloribus cumque quos quo nihil! Numquam explicabo odit accusamus laudantium molestiae. Ipsum culpa dolor sequi dolore doloribus aperiam, earum maxime alias voluptates magni.</p>
+      <div id="readmorebtn"><button class="btn btn-success">Read More...</button></div>
+     </div>
+    </div>
+  </div>
+  <!-- about -->
+</body>
+</html>
